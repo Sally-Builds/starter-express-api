@@ -17,7 +17,7 @@ class App {
         this.app = express();
         this.initializeMiddleware();
         this.initializeControllers(controllers);
-        this.intializeErrorHandler();
+        this.initializeErrorHandler();
     }
 
     private initializeMiddleware() {
@@ -33,7 +33,7 @@ class App {
 
     private initializeControllers(controllers: Controller[]) {
         this.app.get("/", (req, res) => {
-            res.send("Welcome to Cura App!")
+            res.send("Welcome to news web scrapping App!")
           })
         controllers.map((controller: Controller) => {
             this.app.use('/api', controller.router);
@@ -43,7 +43,7 @@ class App {
           })
     }
 
-    private intializeErrorHandler() {
+    private initializeErrorHandler() {
         this.app.use(ErrorMiddleware);
     }
 

@@ -22,6 +22,7 @@ class NewsController implements Controller {
     public initializeRouter = () => {
         
 
+        this.router.get(`${this.path}/total_pages`, this.getTotalPages)
         
         this.router.get(`${this.path}/`, this.getAll)
         this.router.post(`${this.path}/`, this.getOne)
@@ -50,6 +51,19 @@ class NewsController implements Controller {
 
             res.status(201).json({
                 data: result,
+            })
+        } catch (error:any) {
+         next(new HttpException(error.message, error.statusCode))
+        }
+    }
+
+    private getTotalPages = async (req: Request, res:Response, next:NextFunction): Promise<Response | void> => {
+        try {
+
+            const result = await this.factory.totalPages()
+
+            res.status(201).json({
+                totalNumOfPages: result,
             })
         } catch (error:any) {
          next(new HttpException(error.message, error.statusCode))
