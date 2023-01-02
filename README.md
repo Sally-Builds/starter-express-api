@@ -5,7 +5,9 @@ This is the simplest possible nodejs api using express that responds to any requ
 Yo!
 ```
 
-## 1) Fetching List of News
+# 1) News API
+
+## i ) Fetching List of News
 
 ```
 route: /api/news?page=page_number
@@ -30,7 +32,7 @@ eg: /api/news?page=3
 ```
 
 
-## 2) Get A Particular News Article
+## ii ) Get A Particular News Article
 ```
 route: /api/news?find=url_of_news
 method: post
@@ -47,7 +49,7 @@ eg: /api/news?find=https://coalcity.ng/igp-usman-alkali-baba-grants-gov-ugwuanyi
 ```
 ***NB: might still have to add authors name***
 
-## 3)  Get the Total number of pages
+## iii )  Get the Total number of pages
 ```
 route: /api/news/total_pages
 method: get
@@ -73,5 +75,5 @@ method: get
 
 ### Deploy it in 7 seconds: 
 
-[![homepage](https://deploy.cyclic.app/button.svg)](https://cute-jade-narwhal-sari.cyclic.app/)
+[![homepage](https://deploy.cyclic.app/button.svg)](https://fair-cyan-crayfish-sock.cyclic.app)
 
