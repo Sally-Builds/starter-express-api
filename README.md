@@ -62,5 +62,5 @@ method: get
 
 ### Deploy it in 7 seconds: 
 
-[![homepage](https://deploy.cyclic.app/button.svg)](https://fair-cyan-crayfish-sock.cyclic.app/)
+[![homepage](https://deploy.cyclic.app/button.svg)](https://cute-jade-narwhal-sari.cyclic.app/)
 
