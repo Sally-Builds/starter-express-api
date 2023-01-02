@@ -7,6 +7,8 @@ function validateEnv (): void {
             choices: ['development', 'production']
         }),
         PORT: port({default: 3000}),
+        YOUTUBE_API_KEY: str(),
+        CHANNEL_ID: str()
         // DATABASE_URL: str(),
         // JWT_SECRET: str(),
         // EMAIL_HOST: str(),

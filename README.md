@@ -47,11 +47,18 @@ eg: /api/news?find=https://coalcity.ng/igp-usman-alkali-baba-grants-gov-ugwuanyi
 ```
 ***NB: might still have to add authors name***
 
-### 3)  Get the Total number of pages
+## 3)  Get the Total number of pages
 ```
 route: /api/news/total_pages
 method: get
 ```
+
+# 2) TV
+```
+route: /api/tv/
+method: get
+```
+
 
 ### Deploy it in 7 seconds: 
 
