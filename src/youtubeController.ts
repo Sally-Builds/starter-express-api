@@ -7,7 +7,7 @@ import YoutubeAPI from './usecases/youtubeAPI'
 class YoutubeAPIController {
     public path = '/tv'
     public router = Router()
-    private factory = new YoutubeAPI("AIzaSyCSDMG8g64LSx-faMOkRkDPzJE8XAcTmeI", "UCTvvBvyBgYywTZ51nKF_Pqw")
+    private factory = new YoutubeAPI((process.env.YOUTUBE_API_KEY as string), (process.env.CHANNEL_ID as string))
 
 
 
