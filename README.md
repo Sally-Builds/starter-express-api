@@ -59,6 +59,17 @@ route: /api/tv/
 method: get
 ```
 
+### => Data model for tv 
+```js
+{
+    thumbnails: string,
+    title: string,
+    Link: string,
+    publishedAt: Date,
+    description: string
+}
+```
+
 
 ### Deploy it in 7 seconds: 
 
